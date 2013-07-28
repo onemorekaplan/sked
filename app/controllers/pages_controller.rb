@@ -8,9 +8,6 @@ class PagesController < ApplicationController
   def open
   end
 
-  def account
-  end
-
   def login
   end
 end
