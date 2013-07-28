@@ -1,0 +1,36 @@
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="/">
+        Sked
+      </a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="<%= 'active' if current_page?(new_path) %>">
+            <%= link_to "<i class=\"icon-calendar-empty\"></i> New Sked".html_safe, new_path %>
+          </li>
+          <li class="<%= 'active' if current_page?(open_path) %>">
+            <%= link_to "<i class=\"icon-calendar\"></i> Open Skeds".html_safe, open_path %>
+          </li>
+        </ul>
+        <ul class="nav pull-right">
+          <li class="<%= 'active' if current_page?(signup_path) %>">
+            <%= link_to "<i class=\"icon-rocket\"></i> Sign Up".html_safe, signup_path %>
+          </li>
+        </ul>
+      </div>
+ 
+    </div>
+  </div>
+</div>

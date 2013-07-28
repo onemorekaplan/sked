@@ -1,13 +1,15 @@
 Sked::Application.routes.draw do
   root :to => 'pages#home'
 
-  get 'login' => 'pages#login'
+  get 'signup' => 'pages#signup'
 
   get 'new' => 'pages#new'
 
   get 'open' => 'pages#open'
 
   get 'account' => 'pages#account'
+
+  get 'login' => 'pages#login'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

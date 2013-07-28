@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def login
+  def signup
   end
 
   def new
@@ -12,5 +12,8 @@ class PagesController < ApplicationController
   end
 
   def account
+  end
+
+  def login
   end
 end
