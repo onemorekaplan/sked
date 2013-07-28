@@ -1,7 +1,7 @@
 Sked::Application.routes.draw do
-  root :to => 'pages#home'
+  devise_for :users
 
-  get 'signup' => 'pages#signup'
+  root :to => 'pages#home'
 
   get 'new' => 'pages#new'
 
