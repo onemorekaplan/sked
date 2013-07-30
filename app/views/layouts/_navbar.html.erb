@@ -31,8 +31,11 @@
               <%= link_to "<i class=\"icon-unlock\"></i> Logout".html_safe, destroy_user_session_path, method: :delete %>
             </li>
           <% else %>
-            <li class="<%= 'active' if current_page?(signup_path) %>">
-              <%= link_to "<i class=\"icon-edit\"></i> Sign Up".html_safe, new_user_registration_path %>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#login"><i class="icon-lock"></i> Login</a>
+              <ul class="dropdown-menu" style="padding: 20px">
+                <%= render 'devise/sessions/loginmodal' %>
+              </ul>
             </li>
           <% end %>
         </ul>

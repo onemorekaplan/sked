@@ -7,7 +7,4 @@ class PagesController < ApplicationController
 
   def open
   end
-
-  def login
-  end
 end

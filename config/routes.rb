@@ -7,8 +7,6 @@ Sked::Application.routes.draw do
 
   get 'open' => 'pages#open'
 
-  get 'login' => 'pages#login'
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
