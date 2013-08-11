@@ -128,7 +128,7 @@ DEPENDENCIES
   font-awesome-sass-rails
   jquery-rails
   pg
-  rails (= 3.2.12)
+  rails
   sass-rails
   simple_form
   sqlite3

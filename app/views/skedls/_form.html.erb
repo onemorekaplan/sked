@@ -1,0 +1,12 @@
+<%= simple_form_for(@skedl, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :description, label: "Title" %>
+    <%= f.input :cal_type, label: "Calendar Type", :collection => ['Outlook', 'GCal', 'iCal', 'Thunderbird'], as: :radio_buttons %>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-success">
+      <i class="icon-plus"></i> Create Skedl
+    </button>
+  </div>
+<% end %>

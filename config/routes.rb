@@ -1,11 +1,10 @@
 Sked::Application.routes.draw do
+  resources :skedls
+
+
   devise_for :users
 
   root :to => 'pages#home'
-
-  get 'new' => 'pages#new'
-
-  get 'open' => 'pages#open'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

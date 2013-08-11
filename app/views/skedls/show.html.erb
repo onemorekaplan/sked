@@ -1,0 +1,14 @@
+<div class="span6 offset3">
+	<div class="well">
+		<p>
+		  <b>Title:</b>
+		  <%= @skedl.description %>
+		</p>
+		<p>
+		  <b>Cal type:</b>
+		  <%= @skedl.cal_type %>
+		</p>
+		<%= link_to 'Edit', edit_skedl_path(@skedl) %> |
+		<%= link_to 'Back', skedls_path %>
+  </div>
+</div>

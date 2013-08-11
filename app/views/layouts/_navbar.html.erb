@@ -10,16 +10,16 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to "Sked", root_path, class: "brand" %>
+      <%= link_to "Skedl", root_path, class: "brand" %>
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="<%= 'active' if current_page?(new_path) %>">
-            <%= link_to "<i class=\"icon-plus\"></i> New Sked".html_safe, new_path %>
+          <li class="<%= 'active' if current_page?(new_skedl_path) %>">
+            <%= link_to "<i class=\"icon-plus\"></i> New Skedl".html_safe, new_skedl_path %>
           </li>
-          <li class="<%= 'active' if current_page?(open_path) %>">
-            <%= link_to "<i class=\"icon-calendar\"></i> Open Skeds".html_safe, open_path %>
+          <li class="<%= 'active' if current_page?(skedls_path) %>">
+            <%= link_to "<i class=\"icon-calendar\"></i> Open Skedls".html_safe, skedls_path %>
           </li>
         </ul>
         <ul class="nav pull-right">
